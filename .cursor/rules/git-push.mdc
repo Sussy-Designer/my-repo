@@ -1,0 +1,16 @@
+---
+description: Push completed work to GitHub after builds and agent tasks
+alwaysApply: true
+---
+
+# Git push policy
+
+This project is linked to `git@github.com:Sussy-Designer/my-repo.git`.
+
+After completing a build, feature, or meaningful set of changes:
+
+1. Stage and commit with a clear message describing what was built or changed.
+2. Push to `origin` on the current branch (prefer `main`).
+3. Do not commit secrets, credentials, or `.env` files.
+
+If push fails, report the error and retry once after checking auth with `gh auth status`.
