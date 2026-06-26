@@ -1,286 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Build something remarkable. A modern platform designed for teams who move fast and ship with confidence."
-    />
-    <title>Launch — Build something remarkable</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav container" aria-label="Main navigation">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern platform to help you build, launch, and grow faster.">
+  <title>Launch — Build something great</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#">Launch</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a class="btn btn-secondary" href="#contact">Get started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Introducing Launch</p>
+          <h1>Build, launch, and grow — all in one place</h1>
+          <p class="lead">
+            A simple platform designed to help teams move from idea to impact.
+            Ship faster, stay organized, and focus on what matters most.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start for free</a>
+            <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+          </div>
+          <p class="hero-note">No credit card required · Free 14-day trial</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card card-main">
+            <div class="card-header">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="card-body">
+              <div class="stat-row">
+                <div class="stat">
+                  <span class="stat-label">Active projects</span>
+                  <span class="stat-value">24</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Team members</span>
+                  <span class="stat-value">12</span>
+                </div>
+              </div>
+              <div class="progress-block">
+                <div class="progress-label">
+                  <span>Launch readiness</span>
+                  <span>87%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 87%"></span></div>
+              </div>
+              <ul class="task-list">
+                <li class="done">Design review complete</li>
+                <li class="done">Core features built</li>
+                <li>Final QA in progress</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos" aria-label="Trusted by">
+      <div class="container">
+        <p>Trusted by teams who ship</p>
+        <ul class="logo-row">
+          <li>Northline</li>
+          <li>Bluepeak</li>
+          <li>Forma</li>
+          <li>Arcline</li>
+          <li>Vertex</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>Everything you need to move fast</h2>
+          <p>Powerful tools with a clean interface — built for teams of every size.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3>Lightning fast</h3>
+            <p>Optimized workflows help your team ship features in days, not weeks.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🔒</div>
+            <h3>Secure by default</h3>
+            <p>Enterprise-grade security with encryption, access controls, and audit logs.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3>Clear insights</h3>
+            <p>Real-time dashboards surface the metrics that drive better decisions.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🤝</div>
+            <h3>Built for teams</h3>
+            <p>Collaborate seamlessly with comments, roles, and shared workspaces.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🔌</div>
+            <h3>Integrations</h3>
+            <p>Connect the tools you already use with our growing integration library.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🌍</div>
+            <h3>Global scale</h3>
+            <p>Reliable infrastructure that keeps your product running around the clock.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>Up and running in three steps</h2>
+        </div>
+
+        <ol class="step-list">
+          <li>
+            <span class="step-number">1</span>
+            <div>
+              <h3>Create your workspace</h3>
+              <p>Set up your team, invite collaborators, and configure your project in minutes.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">2</span>
+            <div>
+              <h3>Build and iterate</h3>
+              <p>Use our tools to plan, design, and develop with clarity at every stage.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">3</span>
+            <div>
+              <h3>Launch with confidence</h3>
+              <p>Deploy, monitor, and improve with analytics and feedback built in.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple, transparent plans</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="price"><span>$0</span>/mo</p>
+            <p class="price-desc">For individuals getting started</p>
+            <ul>
+              <li>1 workspace</li>
+              <li>Up to 3 projects</li>
+              <li>Basic analytics</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Get started</a>
+          </article>
+
+          <article class="price-card featured">
+            <p class="badge">Most popular</p>
+            <h3>Pro</h3>
+            <p class="price"><span>$29</span>/mo</p>
+            <p class="price-desc">For growing teams</p>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Advanced analytics</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Start free trial</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price"><span>Custom</span></p>
+            <p class="price-desc">For large organizations</p>
+            <ul>
+              <li>SSO &amp; compliance</li>
+              <li>Dedicated support</li>
+              <li>Custom integrations</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Contact sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-inner">
+        <h2>Ready to launch your next big idea?</h2>
+        <p>Join thousands of teams already building with us. Start your free trial today.</p>
+        <form class="signup-form" action="#" method="post">
+          <label class="visually-hidden" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email">
+          <button class="btn btn-primary" type="submit">Get started</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
         <a class="logo" href="#">Launch</a>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-          aria-label="Open menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-links" id="nav-menu">
+        <p>Build something great.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul>
           <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a class="btn btn-sm btn-ghost" href="#contact">Sign in</a></li>
-          <li><a class="btn btn-sm btn-primary" href="#contact">Get started</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+      <p class="copyright">&copy; 2026 Launch. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Now in public beta</p>
-            <h1>Build something your users will love</h1>
-            <p class="lead">
-              Launch helps teams design, ship, and scale products faster — with
-              clarity at every step, from first idea to first customer.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary btn-lg" href="#contact">Start for free</a>
-              <a class="btn btn-secondary btn-lg" href="#how-it-works">See how it works</a>
-            </div>
-            <ul class="hero-stats" aria-label="Platform highlights">
-              <li>
-                <strong>10k+</strong>
-                <span>Teams onboarded</span>
-              </li>
-              <li>
-                <strong>99.9%</strong>
-                <span>Uptime SLA</span>
-              </li>
-              <li>
-                <strong>4.9/5</strong>
-                <span>Customer rating</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="hero-card hero-card-main">
-              <div class="card-header">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-              <div class="card-body">
-                <div class="metric-row">
-                  <span class="metric-label">Active projects</span>
-                  <span class="metric-value">128</span>
-                </div>
-                <div class="chart-bars">
-                  <span style="--h: 42%"></span>
-                  <span style="--h: 68%"></span>
-                  <span style="--h: 55%"></span>
-                  <span style="--h: 82%"></span>
-                  <span style="--h: 74%"></span>
-                  <span style="--h: 91%"></span>
-                  <span style="--h: 63%"></span>
-                </div>
-                <div class="metric-row">
-                  <span class="metric-label">Ship velocity</span>
-                  <span class="metric-value metric-up">+24%</span>
-                </div>
-              </div>
-            </div>
-            <div class="hero-card hero-card-float">
-              <p>Deploy complete</p>
-              <span class="badge badge-success">Live in 42s</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="logos" aria-label="Trusted by">
-        <div class="container">
-          <p>Trusted by teams at</p>
-          <ul class="logo-row">
-            <li>Northwind</li>
-            <li>Acme Co</li>
-            <li>Studio 42</li>
-            <li>Horizon</li>
-            <li>Pixel &amp; Co</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="features" id="features">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Features</p>
-            <h2>Everything you need to move from idea to impact</h2>
-            <p>
-              Purpose-built tools that keep your team aligned, your workflow
-              smooth, and your releases on schedule.
-            </p>
-          </div>
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="feature-icon" aria-hidden="true">◆</div>
-              <h3>Ship faster</h3>
-              <p>
-                Automate repetitive tasks and focus on what matters. Go from
-                prototype to production in days, not months.
-              </p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-icon" aria-hidden="true">◎</div>
-              <h3>Stay in sync</h3>
-              <p>
-                Real-time collaboration keeps design, engineering, and
-                stakeholders on the same page — always.
-              </p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-icon" aria-hidden="true">▣</div>
-              <h3>Scale with confidence</h3>
-              <p>
-                Enterprise-grade security and observability built in, so you
-                can grow without rewriting your stack.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="steps" id="how-it-works">
-        <div class="container steps-grid">
-          <div class="section-heading">
-            <p class="eyebrow">How it works</p>
-            <h2>Three steps to your next launch</h2>
-            <p>
-              A simple workflow designed to remove friction and keep momentum
-              high from day one.
-            </p>
-          </div>
-          <ol class="step-list">
-            <li>
-              <span class="step-number">01</span>
-              <div>
-                <h3>Create your workspace</h3>
-                <p>
-                  Set up your team, connect your tools, and import existing
-                  projects in minutes.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="step-number">02</span>
-              <div>
-                <h3>Build and iterate</h3>
-                <p>
-                  Design, develop, and review in one place with live previews
-                  and instant feedback loops.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="step-number">03</span>
-              <div>
-                <h3>Launch and learn</h3>
-                <p>
-                  Deploy with one click, monitor performance, and improve with
-                  actionable insights.
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="pricing" id="pricing">
-        <div class="container">
-          <div class="section-heading center">
-            <p class="eyebrow">Pricing</p>
-            <h2>Simple plans that grow with you</h2>
-          </div>
-          <div class="pricing-grid">
-            <article class="price-card">
-              <h3>Starter</h3>
-              <p class="price"><span>$0</span>/mo</p>
-              <p class="price-desc">For individuals exploring the platform.</p>
-              <ul>
-                <li>1 workspace</li>
-                <li>Up to 3 projects</li>
-                <li>Community support</li>
-              </ul>
-              <a class="btn btn-secondary" href="#contact">Get started</a>
-            </article>
-            <article class="price-card price-card-featured">
-              <p class="badge badge-accent">Most popular</p>
-              <h3>Pro</h3>
-              <p class="price"><span>$29</span>/mo</p>
-              <p class="price-desc">For growing teams shipping regularly.</p>
-              <ul>
-                <li>Unlimited projects</li>
-                <li>Advanced analytics</li>
-                <li>Priority support</li>
-              </ul>
-              <a class="btn btn-primary" href="#contact">Start free trial</a>
-            </article>
-            <article class="price-card">
-              <h3>Enterprise</h3>
-              <p class="price"><span>Custom</span></p>
-              <p class="price-desc">For organizations with advanced needs.</p>
-              <ul>
-                <li>SSO &amp; audit logs</li>
-                <li>Dedicated success manager</li>
-                <li>Custom SLAs</li>
-              </ul>
-              <a class="btn btn-secondary" href="#contact">Contact sales</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta" id="contact">
-        <div class="container cta-inner">
-          <h2>Ready to launch your next big idea?</h2>
-          <p>
-            Join thousands of teams already building with Launch. No credit
-            card required.
-          </p>
-          <form class="cta-form" action="#" method="post">
-            <label class="visually-hidden" for="email">Email address</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="you@company.com"
-              autocomplete="email"
-              required
-            />
-            <button class="btn btn-primary" type="submit">Get early access</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="logo" href="#">Launch</a>
-          <p>Build something remarkable.</p>
-        </div>
-        <nav aria-label="Footer navigation">
-          <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <p class="copyright">&copy; 2026 Launch. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>

@@ -16,19 +16,15 @@ if (navToggle && navMenu) {
   });
 }
 
-const ctaForm = document.querySelector(".cta-form");
+const signupForm = document.querySelector(".signup-form");
 
-if (ctaForm) {
-  ctaForm.addEventListener("submit", (event) => {
+if (signupForm) {
+  signupForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const emailInput = ctaForm.querySelector("#email");
-    const email = emailInput instanceof HTMLInputElement ? emailInput.value.trim() : "";
-
-    if (!email) {
-      return;
+    const emailInput = signupForm.querySelector("#email");
+    if (emailInput && emailInput.value) {
+      signupForm.reset();
+      alert("Thanks! We'll be in touch soon.");
     }
-
-    ctaForm.reset();
-    alert("Thanks! We'll be in touch soon.");
   });
 }
